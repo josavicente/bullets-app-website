@@ -20,13 +20,19 @@ import { Icon } from "astro-icon";
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Bullets <br> Save your money!
+      class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500"
+						>Bullets</span
+					> 
+					<span
+						class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading"
+						>Tener muchas subscripciones ya no será un problema.</span
+					>
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Bullets helps you to keep up to date the payments of all your subscriptions and services. 
-      <br>Besides including an extended subscription list, 
-      you can build your own subscriptions without limits as well as personalise them. 
+      Disfruta tu tiempo consumiendo aquello que amas. Bullets se ocupa del resto.
+      <br>Siempre tendrás claro cuando y en que subscripciones gastas tu dinero. 
+      Bullets te avisará para que canceles a tiempo.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
@@ -35,8 +41,7 @@ import { Icon } from "astro-icon";
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
+        <Icon class="text-white w-5 h-5 " name="bx:bxs-cloud-download" />
         App Store
       </Link>
       <Link
