@@ -2,12 +2,12 @@
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Pricing from "@components/pricing.astro";
+import Plans from "@components/pricing.astro";
 
-const pricing = [
+const plans = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "Gratis",
+    price: "0 ",
     popular: false,
     features: [
       "Lifetime free",
@@ -18,19 +18,14 @@ const pricing = [
       "Community Support",
     ],
     button: {
-      text: "Get Started",
-      link: "/",
+      text: "Descarga la app",
+      link: "https://apps.apple.com/es/app/bullets/id1536420851",
     },
   },
   {
-    name: "Startup",
-    price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
-    },
-    popular: true,
+    name: "Opción Plus",
+    price: "3,99",
+    popular: false,
     features: [
       "All Free Features",
       "Up to 20 users",
@@ -40,14 +35,14 @@ const pricing = [
       "Priority Support",
     ],
     button: {
-      text: "Get Started",
-      link: "#",
+      text: "Descarga la app",
+      link: "https://apps.apple.com/es/app/bullets/id1536420851",
     },
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    popular: false,
+    name: "Opción Premium",
+    price: "6,99",
+    popular: true,
     features: [
       "All Pro Features",
       "Unlimited Custom domains",
@@ -57,24 +52,24 @@ const pricing = [
       "24/7 Phone Support",
     ],
     button: {
-      text: "Contact us",
-      link: "/contact",
+      text: "Descarga la app",
+      link: "https://apps.apple.com/es/app/bullets/id1536420851",
     },
   },
 ];
 ---
 
-<Layout title="Pricing">
+<Layout title="Plans">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">Planes</Fragment>
       <Fragment slot="desc"
-        >Simple & Predictable pricing. No Surprises.</Fragment
+        >Free, Plus o Premium</Fragment
       >
     </Sectionhead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-      {pricing.map((item) => <Pricing plan={item} />)}
+      {plans.map((item) => <Plans plan={item} />)}
     </div>
   </Container>
 </Layout>
