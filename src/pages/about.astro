@@ -5,6 +5,8 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import heroImage from "assets/josa.jpeg";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -24,10 +26,11 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         Paz mental en el control de tus gastos.
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        Soy Josa, Engineer manager y desarrollador. Este proyecto nació durante la pandemia del Covid-19. Cómo forma de aprendizaje en el desarrollo en plataformas iOS. Tras unos meses
+        Soy Josa, Engineer manager y desarrollador. Este proyecto nació durante la pandemia del Covid-19. Como forma de aprendizaje en el desarrollo en plataformas iOS. Tras unos meses
         de aprendizaje lancé esta primera app. Bullets, nace para poner solución a un problema propio, gestionar mis subscripciones o pagos recurrentes de una forma sencilla y con funcionalidades
         que no encontraba en otras apps. Sencilla, minimalista e intuitiva. Bullets una vez añades tus subscripciones, olvidalas, Bullets te avisará y te tendrá al tanto cuando sea necesario. Mientras, disfruta.
       </p>
+      
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
