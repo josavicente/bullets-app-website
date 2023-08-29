@@ -7,15 +7,15 @@ import Plans from "@components/pricing.astro";
 const plans = [
   {
     name: "Gratis",
-    price: "0 ",
+    price: "0 €",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Sin límite de subscripciones",
+      "Listado de servicios incluído",
+      "Crea tus propias subscripciones",
+      "Personaliza la apariencia",
+      "Notificaciones de pago",
+      "Privada & Segura"
     ],
     button: {
       text: "Descarga la app",
@@ -24,15 +24,19 @@ const plans = [
   },
   {
     name: "Opción Plus",
-    price: "3,99",
+    price: "3,99 €",
     popular: false,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "Sin límite de subscripciones",
+      "Listado de servicios incluído",
+      "Crea tus propias subscripciones",
+      "Personaliza la apariencia",
+      "Notificaciones de pago",
+      "Privada & Segura",
+      "Comparte con amigos",
+      "Pausa subscripciones",
+      "Resumen de tus subscripciones",
+      "Widgets en la pantalla de inicio"
     ],
     button: {
       text: "Descarga la app",
@@ -41,15 +45,25 @@ const plans = [
   },
   {
     name: "Opción Premium",
-    price: "6,99",
+    price: "6,99 €",
     popular: true,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Sin límite de subscripciones",
+      "Listado de servicios incluído",
+      "Crea tus propias subscripciones",
+      "Personaliza la apariencia",
+      "Notificaciones de pago",
+      "Privada & Segura",
+      "Comparte con amigos",
+      "Pausa subscripciones",
+      "Resumen de tus subscripciones",
+      "Widgets en la pantalla de inicio",
+      "Pestaña hoy",
+      "Widgets en pantalla de bloqueo",
+      "Personaliza la edición",
+      "Marca subscripciones en duda de renovación",
+      "Marca favoritas",
+      "Define un presupuesto mensual"
     ],
     button: {
       text: "Descarga la app",
@@ -59,12 +73,12 @@ const plans = [
 ];
 ---
 
-<Layout title="Plans">
+<Layout title="Planes">
   <Container>
     <Sectionhead>
       <Fragment slot="title">Planes</Fragment>
       <Fragment slot="desc"
-        >Free, Plus o Premium</Fragment
+        >Free, Plus o Premium, elige el que mejor se adapte a tus necesidades. Siempre con una aplicación 100% funcional.</Fragment
       >
     </Sectionhead>
 
